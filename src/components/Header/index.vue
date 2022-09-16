@@ -1,8 +1,10 @@
 <template>
   <header class="header">
     <div class="header__wrapper container">
-      <img src="../../assets/logo.png" alt="logo" />
-      <h1 class="header__title">Pizza NRD</h1>
+      <router-link to="/" exact>
+        <img src="../../assets/images/logo.png" alt="logo" />
+        <h1 class="header__title">Pizza NRD</h1>
+      </router-link>
     </div>
   </header>
 </template>
@@ -15,9 +17,10 @@ export default {
 
 <style lang="scss">
 .header {
-  height: 48px;
+  height: 56px;
   padding: 8px 0;
   background-color: antiquewhite;
+  margin-bottom: 16px;
 
   &__wrapper {
     display: flex;
@@ -25,13 +28,21 @@ export default {
     justify-content: flex-start;
     gap: 16px;
 
-    img {
-      width: 32px;
+    a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: #2c3e50;
+
+      img {
+        width: 32px;
+      }
     }
   }
 
   &__title {
-    font-size: 1.4rem;
+    font-size: 24px;
+    line-height: 18px;
   }
 }
 </style>

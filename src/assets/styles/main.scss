@@ -1,67 +1,20 @@
-* {
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
-html {
-  height: 100%;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  padding: 0;
-  margin: 0;
-  background: #ffffff;
-  font-size: 16px;
-  height: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  padding: 0;
-  margin: 0;
-}
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
-div,
-p,
-input,
-form {
-  box-sizing: border-box;
-}
-
-ul,
-li {
-  display: block;
-  padding: 0;
-  margin: 0;
-}
-
-img {
-  display: block;
-}
+@forward "reset";
 
 .container {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 24px;
+
+  @media (max-width: 600px) {
+    padding: 8px;
+  }
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Avenir, Roboto, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   height: 100%;
 }

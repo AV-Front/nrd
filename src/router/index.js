@@ -1,19 +1,20 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Catalog from "../pages/Catalog/index";
+import Pizza from "../pages/Pizza/index";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "Catalog",
-    component: Catalog,
+    name: "Pizza",
+    component: Pizza,
   },
   {
-    path: "/about",
-    name: "About",
-    component: () => import("../pages/About.vue"),
+    path: "/order/:id",
+    name: "",
+    component: () => import("../pages/Order/index"),
+    props: (route) => ({ id: Number(route.params.id) }),
   },
 ];
 

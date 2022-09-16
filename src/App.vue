@@ -14,6 +14,10 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 @import "assets/styles/main.scss";
+
+#app {
+  min-height: calc(100vh - 56px);
+}
 </style>
