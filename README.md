@@ -1,1 +1,1 @@
-# NRD Test Task
+# https://av-front.github.io/nrd/
