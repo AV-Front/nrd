@@ -11,10 +11,9 @@ const routes = [
     component: Pizza,
   },
   {
-    path: "/order/:id",
+    path: "/order",
     name: "",
     component: () => import("../pages/Order/index"),
-    props: (route) => ({ id: Number(route.params.id) }),
   },
 ];
 

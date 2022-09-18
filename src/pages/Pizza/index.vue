@@ -32,7 +32,10 @@ export default {
   },
   methods: {
     makeOrder(id) {
-      this.$router.push(`/order/${id}`);
+      // I could, of course, immediately transfer the item for the order, but I considered it right to transfer the ID and then find it
+      const pizzaToOrder = this.pizza.find((i) => i.id === id);
+      localStorage.setItem("item", JSON.stringify(pizzaToOrder));
+      this.$router.push("/order");
     },
   },
   created() {

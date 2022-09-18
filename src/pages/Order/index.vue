@@ -21,12 +21,6 @@ import OrderForm from "../../components/OrderForm";
 export default {
   name: "Order",
   components: { Title, OrderForm },
-  props: {
-    id: {
-      type: Number,
-      required: true,
-    },
-  },
   data() {
     return {
       itemForOrder: null,
@@ -41,9 +35,10 @@ export default {
     },
   },
   created() {
-    // Of course, everything is decided through the state manager, but I did not install
-    // Therefore, this like data finding
-    this.itemForOrder = pizzaData.find((i) => i.id === this.id);
+    this.itemForOrder = JSON.parse(localStorage.getItem("item"));
+  },
+  beforeDestroy() {
+    localStorage.removeItem("item");
   },
 };
 </script>
