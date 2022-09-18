@@ -3,7 +3,7 @@
     <div class="header__wrapper container">
       <router-link to="/" exact>
         <img src="../../assets/images/logo.png" alt="logo" />
-        <h1 class="header__title">Pizza NRD</h1>
+        <span class="header__title">pizza nrd</span>
       </router-link>
     </div>
   </header>
@@ -41,8 +41,10 @@ export default {
   }
 
   &__title {
-    font-size: 24px;
-    line-height: 18px;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
   }
 }
 </style>

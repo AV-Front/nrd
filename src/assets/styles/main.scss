@@ -1,4 +1,4 @@
-@forward "reset";
+@use "reset";
 
 .container {
   width: 100%;
@@ -7,7 +7,7 @@
   padding: 0 24px;
 
   @media (max-width: 600px) {
-    padding: 8px;
+    padding: 0 8px;
   }
 }
 
