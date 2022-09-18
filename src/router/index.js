@@ -12,7 +12,7 @@ const routes = [
   },
   {
     path: "/order",
-    name: "",
+    name: "Order",
     component: () => import("../pages/Order/index"),
   },
 ];
