@@ -8,7 +8,7 @@
       </div>
       <div class="order__address">
         <div class="order__address__title">Address</div>
-        <Form @submit="submit($event)" />
+        <OrderForm @submit="submit($event)" />
       </div>
     </div>
   </section>
@@ -17,10 +17,10 @@
 <script>
 import pizzaData from "../../assets/jsonData/pizzaData.json";
 import Title from "../../components/UI/Title";
-import Form from "../../components/UI/Form";
+import OrderForm from "../../components/OrderForm";
 export default {
   name: "Order",
-  components: { Title, Form },
+  components: { Title, OrderForm },
   props: {
     id: {
       type: Number,

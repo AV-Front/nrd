@@ -13,18 +13,20 @@ export default {
 
 <style lang="scss">
 .button {
-  width: 240px;
-  height: 32px;
+  width: 300px;
+  height: 42px;
   font-size: 16px;
   line-height: 18px;
-  background-color: aliceblue;
-  border: 1px solid chocolate;
-  border-radius: 4px;
+  background-color: #2c3e50;
+  border: 1px solid antiquewhite;
+  border-radius: 8px;
   cursor: pointer;
-  color: #2c3e50;
+  color: white;
 
   &:hover {
+    border: 1px solid #2c3e50;
     background-color: antiquewhite;
+    color: #2c3e50;
     transform: scale(1.01);
   }
 }
